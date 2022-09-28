@@ -7,7 +7,7 @@
   header {
     background-color: #4986b8;
     color: white;
-    height: 40px;
+    height: 5vh;
     padding: 20px;
     width: 100%;
   }
@@ -16,7 +16,7 @@
     height: 77vh;
     max-width: 800px;
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     margin: 20px auto;
     gap: 10px;
   }
@@ -39,10 +39,41 @@
   }
   
   footer {
-    position: absolute;
+    /* position: static; */
     bottom: 0;
     background-color: black;
     color: white;
     padding: 20px;
     width: 100%;
+    height: 5vh;
+  }
+
+  @media screen and (max-device-width: 480px) {
+    header{
+      display: flex;
+      /* align-items: center; */
+      justify-content: center;
+      padding: 16px 0;
+    }
+
+    main{
+      flex-direction: column;
+      margin: 0;
+      align-items: center;
+      max-width: none;
+      min-height: 100vh;
+      height: 100%;
+      position: static;
+    }
+
+    main aside,
+    main section {
+      width: 90vw;
+    }
+
+    footer{
+      display: flex;
+      align-items: center;
+      padding: 16px 0;
+    }
   }

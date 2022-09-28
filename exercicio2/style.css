@@ -1,0 +1,22 @@
+main{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section{
+    border: 1px solid black;
+    padding: 5vw 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-device-width: 480px){
+    main{
+        display: flex;
+        flex-direction: column;
+        color: red;
+    }
+    
+}
